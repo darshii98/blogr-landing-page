@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+$primary-red-lt: hsl(356, 100%, 66%);
+$primary-red-ltr: hsl(355, 100%, 74%);
+$primary-blue-dkr: hsl(208, 49%, 24%);
+
+$neutral-white: hsl(0, 0%, 100%);
+$neutral-blue-gray: hsl(240, 2%, 79%);
+$neutral-blue-gray-dkr: hsl(207, 13%, 34%);
+$neutral-blue-black-dkr: hsl(240, 10%, 16%);
+
+$font-family-overpass: "Overpass", sans-serif;
+$font-family-ubuntu: "Ubuntu", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin transition-ease {
+  transition: all 0.25s ease-in-out;
+}
+
+@mixin media-xl {
+  @media only screen and (max-width: 1240px) {
+    @content;
+  }
+}
+
+@mixin media-l {
+  @media only screen and (max-width: 1036px) {
+    @content;
+  }
+}
+
+@mixin media-m {
+  @media only screen and (max-width: 940px) {
+    @content;
+  }
+}
+
+@mixin media-s {
+  @media only screen and (max-width: 785px) {
+    @content;
+  }
+}
+
+@mixin media-xs {
+  @media only screen and (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin media-xxs {
+  @media only screen and (max-width: 355px) {
+    @content;
+  }
+}

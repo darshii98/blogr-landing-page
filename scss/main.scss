@@ -1,0 +1,72 @@
+@import "config";
+@import "header";
+@import "sections";
+@import "queries";
+
+header {
+  height: 65vh;
+  overflow: hidden;
+  //   border: 2px solid red;
+}
+
+footer {
+  min-height: 40vh;
+  //   border: 2px solid red;
+  border-top-right-radius: 90px;
+  background: $neutral-blue-black-dkr;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5rem;
+  position: relative;
+
+  h3 {
+    color: $neutral-white;
+    font-family: $font-family-ubuntu;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: 0.7rem;
+      a {
+        text-decoration: none;
+        font-family: $font-family-ubuntu;
+        font-weight: 400;
+        color: $neutral-blue-gray;
+        border-bottom: 1px solid transparent;
+        @include transition-ease;
+
+        &:active,
+        &:hover {
+          border-bottom: 1px solid $neutral-white;
+        }
+      }
+    }
+  }
+  .attribution {
+    position: absolute;
+    bottom: 1%;
+    color: $neutral-white;
+    .frontend-mentor,
+    .author {
+      text-decoration: none;
+      color: $neutral-white;
+      font-size: 14px;
+    }
+
+    .author {
+      border: 1px solid transparent;
+      transition: all 0.25s;
+      font-size: 14px;
+    }
+
+    .author:active,
+    .author:hover {
+      border-bottom: 1px solid $neutral-white;
+    }
+  }
+}

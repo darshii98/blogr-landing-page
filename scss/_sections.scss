@@ -1,0 +1,143 @@
+.section-future {
+  min-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  h2 {
+    text-align: center;
+    font-family: $font-family-overpass;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    color: $primary-blue-dkr;
+  }
+
+  .img-container-mobile {
+    display: none;
+  }
+
+  .text-box {
+    width: 50%;
+    padding-left: 5rem;
+    padding-right: 4rem;
+
+    h3 {
+      font-family: $font-family-overpass;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: $primary-blue-dkr;
+    }
+
+    p {
+      font-family: $font-family-ubuntu;
+      line-height: 1.8rem;
+      color: $neutral-blue-gray-dkr;
+    }
+
+    &__1 {
+      p {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  .img-container {
+    position: absolute;
+    height: 80vh;
+    right: -12%;
+    top: 5%;
+
+    img {
+      height: 100%;
+    }
+  }
+}
+
+.section-infra {
+  min-height: 40vh;
+  border-bottom-left-radius: 90px;
+  border-top-right-radius: 90px;
+  background: url("/dist/images/bg-pattern-circles.svg"),
+    linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  background-repeat: no-repeat;
+  background-position: -25% 80%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+
+  .img-container {
+    position: absolute;
+    left: 3rem;
+    top: -18%;
+  }
+
+  &__text-box {
+    width: 50%;
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+      font-family: $font-family-overpass;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: $neutral-white;
+    }
+    p {
+      font-family: $font-family-ubuntu;
+      line-height: 1.8rem;
+      color: $neutral-white;
+    }
+  }
+}
+
+.section-features {
+  min-height: 90vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .img-container-mobile {
+    display: none;
+  }
+
+  .text-box {
+    width: 50%;
+    padding-right: 5rem;
+
+    h3 {
+      font-family: $font-family-overpass;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: $primary-blue-dkr;
+    }
+
+    p {
+      font-family: $font-family-ubuntu;
+      line-height: 1.8rem;
+      color: $neutral-blue-gray-dkr;
+    }
+
+    &__1 {
+      p {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  .img-container {
+    position: absolute;
+    height: 80vh;
+    left: -15%;
+    top: 5%;
+
+    img {
+      height: 100%;
+    }
+  }
+}

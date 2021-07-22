@@ -1,0 +1,237 @@
+.header-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-bottom-left-radius: 90px;
+  background: url("/dist/images/bg-pattern-intro.svg"),
+    linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-position: 15% 50%;
+  background-repeat: no-repeat;
+
+  .navbar {
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+    align-items: center;
+
+    .logo-links-box {
+      display: flex;
+      width: 65%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .logo {
+        margin-right: 4rem;
+      }
+      .nav-links-container {
+        position: relative;
+
+        .tooltip-box {
+          position: absolute;
+          background: $neutral-white;
+          width: 9rem;
+          height: 8rem;
+          right: -10%;
+          top: 120%;
+          border-radius: 7px;
+          // visibility: hidden;
+          display: none;
+
+          &__active {
+            // visibility: visible;
+            display: unset;
+          }
+
+          ul {
+            list-style: none;
+
+            li {
+              margin: 1rem;
+              a {
+                text-decoration: none;
+                color: $neutral-blue-black-dkr;
+                font-family: $font-family-ubuntu;
+                font-size: 0.9rem;
+                transition: font-weight 0.25s;
+
+                &:active,
+                &:hover {
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+        }
+
+        .nav-links {
+          list-style: none;
+
+          li {
+            display: inline-block;
+            margin-right: 1.5rem;
+
+            button {
+              font-family: $font-family-ubuntu;
+              margin-right: 4px;
+              color: $neutral-white;
+              font-weight: 500;
+              border: 2px solid transparent;
+              background: transparent;
+              cursor: pointer;
+              font-size: 1rem;
+              @include transition-ease;
+
+              &:active,
+              &:hover {
+                border-bottom: 2px solid $neutral-white;
+              }
+            }
+
+            .up-arr {
+              display: none;
+
+              &__active {
+                display: unset;
+              }
+            }
+
+            .down-arr {
+              display: unset;
+
+              &__hidden {
+                display: none;
+              }
+            }
+
+            ion-icon {
+              // font-size: 16px;
+              margin-bottom: -3px;
+              color: $neutral-white;
+            }
+          }
+        }
+      }
+    }
+
+    .signup-btns {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 35%;
+
+      .btn-login {
+        width: 3.5rem;
+        height: 2.7rem;
+        font-size: 1rem;
+        font-family: $font-family-ubuntu;
+        font-weight: 500;
+        color: $neutral-white;
+        background: transparent;
+        cursor: pointer;
+        border: 2px solid transparent;
+        @include transition-ease;
+
+        &:active,
+        &:hover {
+          border-bottom: 2px solid $neutral-white;
+        }
+      }
+
+      .btn-signup {
+        width: 8rem;
+        height: 2.7rem;
+        border-radius: 30px;
+        font-size: 1rem;
+        border: transparent;
+        background: $neutral-white;
+        margin-left: 1rem;
+        font-family: $font-family-ubuntu;
+        font-weight: 500;
+        color: $primary-red-lt;
+        cursor: pointer;
+        @include transition-ease;
+
+        &:active,
+        &:hover {
+          background: $primary-red-ltr;
+          color: $neutral-white;
+        }
+      }
+    }
+
+    .btn-menu {
+      height: 3.5rem;
+      width: 3rem;
+      border: transparent;
+      background: transparent;
+      cursor: pointer;
+      display: none;
+
+      ion-icon {
+        font-size: 2.5rem;
+        color: $neutral-white;
+      }
+    }
+  }
+
+  .hero-text-box {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    h1 {
+      font-size: 4rem;
+      font-family: $font-family-overpass;
+      color: $neutral-white;
+    }
+
+    h2 {
+      margin: 1rem 0 3rem 0;
+      font-size: 1.3rem;
+      font-family: $font-family-ubuntu;
+      font-weight: 400;
+      color: $neutral-white;
+    }
+    .btn-container {
+      .btn-hero {
+        width: 8.5rem;
+        height: 2.7rem;
+        border-radius: 30px;
+        font-size: 1rem;
+        border: transparent;
+        background: transparent;
+        font-family: $font-family-ubuntu;
+        font-weight: 500;
+        cursor: pointer;
+        @include transition-ease;
+      }
+
+      .btn-start {
+        color: $primary-red-lt;
+        background: $neutral-white;
+
+        &:active,
+        &:hover {
+          background: $primary-red-ltr;
+          color: $neutral-white;
+        }
+      }
+      .btn-learn-more {
+        border: 1px solid white;
+        color: $neutral-white;
+        margin-left: 0.5rem;
+
+        &:active,
+        &:hover {
+          background: $neutral-white;
+          color: $primary-red-lt;
+        }
+      }
+    }
+  }
+}
